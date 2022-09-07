@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /* Min e Max faz com que meu conteúdo para de quebrar */
+            max-width: 800px;
+            margin: auto; /* Deixa meu site centralizado */
+        }
+        
+        img {
+            width: 100%; /* Faz minha imagem parar de quebrar, reduzindo ela */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsivodade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam hic vero perferendis porro, quisquam impedit ex odio eos, veritatis quod rem corrupti molestias tenetur, voluptatem reprehenderit maiores laborum sequi temporibus adipisci? Dolorem ut perspiciatis maiores aperiam aspernatur hic a reprehenderit, quis, cumque, ipsa aliquid itaque sit voluptatum porro obcaecati quod natus rerum? Rem ipsa facere quos fugiat laborum, officia ad sint veritatis unde, nulla blanditiis earum numquam eos! Quos sit debitis nihil fuga veniam voluptatibus ipsam laudantium alias. Ipsum tempore asperiores mollitia iste id repudiandae eaque maiores quibusdam eius? Eum laudantium velit, nihil at accusamus fuga. Impedit exercitationem porro magni.</p>
+
+        <picture>
+            <source media="(max-width: 600px )" srcset="imagens/irina-blok-pq.jpg"> /* Faz com que minha imagem MAIOR ao chegar em um certo PX, comece a quebrar até virar a segunda a imagem, que no caso é a mesma só que pequena */
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit ex cumque nostrum hic iste sed voluptatibus aliquam culpa debitis. Laudantium, voluptates sapiente assumenda iure quos tempora ex delectus, deleniti nam commodi iste vitae dolorum, nulla dignissimos molestiae sit. Numquam distinctio accusamus, nobis recusandae sint commodi molestiae reprehenderit veritatis dolores.</p>
+    </main>
+</body>
+</html>

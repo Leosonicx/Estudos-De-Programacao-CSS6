@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { /* Display Box */
+            display: inline; /* Transforma TODO o H1 em um display INLINE */
+            background-color: lightgrey;
+            height:300px;
+            width: 300px;
+/*====================IMPORTANTE:=====================================*/
+            border-width: 10px; /* Cria uma borda */
+            border-style: solid; /* Tipo de borda */
+            border-color: darkgrey; /* Cor da borda */
+             /*shorthand na ordem de cima */  
+            border: 10px solid darkgray; /* Simplifica a linha de cima */
+         
+/*====================IMPORTANTE:=====================================*/
+            padding-top: 10px; /* Cresce a borda */
+            padding-right: 10px;
+            padding-bottom: 10px;   
+            
+            padding-left: 10px;
+            /*shorthand na ordem de cima */  
+            padding: 10px; /* Simplifica a linha de cima, no caso aqui as 4 são iguais, posso simplificar UMA VEZ só. */
+
+/*====================IMPORTANTE:=====================================*/
+            margin:auto; /* Deixa uma caixa centralizada, se fosse apenas um texto, usar o text-align: center; */
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+            /*shorthand na ordem de cima */  
+            margin: 20px auto 40px auto; /* Simplifica a linha de cima, no caso aqui as 4 são iguais, posso simplificar UMA VEZ só. */
+
+/*====================IMPORTANTE:=====================================*/
+
+            outline-width: 5px; /* A outline fica entre a borda e a margin. */
+            outline-style: dashed;
+            outline-color: salmon;
+            outline: 5px dashed salmon;  /* Simplifica a linha de cima, no caso aqui as 4 são iguais, posso simplificar UMA VEZ só. */
+        }
+
+        a { /* Display Inline */
+            display: block; /* Transforma TODO o link em um display-box */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Exemplo de Caixas box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="a">links são exemplos de caixas inline-level </a>, Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

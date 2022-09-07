@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+    * {
+        font-family: cursive;
+    }
+
+    body{
+        background-image: linear-gradient( to right, #00FAE5, #1AADA1,#FA140C,#55FA19,#41AD1A );
+    }
+
+    main {
+        background-color: white;
+        width: 600px;
+        padding: 10px; 
+        box-shadow: 10px 10px 10px black; /* Primeiro px: 10px andando pro lado, segundo px: 10px andando pra baixo, terceiro px: 10px de espalhamento e a cor da sombra. É possível transformar a cor em rgba. */
+        margin: auto; /* Sempre vai deixar o conteúdo no centro da tela, não importa o quanto você mova a janela */
+        border-radius: 40px; /* Deixa a parte de conteúdo do seu site com uma borda redonda */
+    }
+
+    h1{
+        color: #FA140C;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    h2{
+        color: #55FA19;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    h3{
+        color: #00FAE5;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    p {
+        text-align: justify;
+    }

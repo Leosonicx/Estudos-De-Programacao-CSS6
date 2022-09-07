@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div:hover {
+            color: red;
+        }
+        
+        div > p {           /* > Sifnifica que a tag tem um filho, e posso fazer o que quiser com ele, no caso aqui, esconde-lo. */
+            display:none
+        }
+
+        div:hover > p {   /* Com o HOVER de pseudoclasse, ele faz com que o texto volte a aparecer */
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px
+        }
+
+    </style>
+</head>
+<body>
+     <h1>Exemplo de Hover:</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+
+    <div>
+            Passe o mouse aqui
+            <p>Texto escondido</p>
+
+    </div>
+
+            <p>fim do exemplo.</p>
+    
+</body>
+</html>
