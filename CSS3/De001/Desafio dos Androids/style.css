@@ -55,7 +55,7 @@
         font-family: var(--fonte-padrao);
         font-size: 1.2em; /* Fazer a fonte dar uma crescidinha */
         margin: auto;
-        margin-bottom: 30px; 
+        padding-bottom: 50px; /* Afastou o P do NAV sem que bugasse numa tela menor */ 
         max-width: 500px; /* Sem a margin automtica, ele iria virar um bloco e não iria centralizar */
         padding-left: 10px; /* Com os padding left e right, vai permitir que ele não fique colado no canto da tela */
         padding-right: 10px;
