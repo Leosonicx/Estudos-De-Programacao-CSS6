@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo de tela fixo</title>
     <style>
         body {
             height: 100vh;
@@ -13,11 +13,17 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover; /* Usando o cover vai fazer dar uma mini picotadinha na imagem, mas vai ocupar 100% da tela */
+            background-attachment: fixed; /* Com o Cover e o Fixed, apenas o conteúdo irá descer. */ 
+
+            /* Shorthand background: Color > Image > Repeat >  [Size] > Attachment. */
+
+            background: black url(Imagens/wallpaper002.jpg) no-repeat cover fixed; /* A parte do SIZE não funciona, então devemos fazer: */
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px; /* Vai espremer o conteúdo até o tamanho necessário, e o fundo irá continuar parado la atrás por causa do FIXED */
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +34,10 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus numquam id, perferendis temporibus officia dolorum sapiente, explicabo inventore, sed eum assumenda omnis. Optio hic consequuntur officia, eius asperiores alias veritatis accusamus corrupti aspernatur beatae quam illum perferendis. Illum accusantium atque, voluptatibus eligendi vero dolorem harum quod inventore, sed cumque laborum facere voluptate earum nesciunt quisquam. Eius veniam sed iure magnam modi accusamus tempora voluptates cupiditate doloribus libero inventore, doloremque autem distinctio nostrum temporibus dolores, esse impedit possimus neque saepe nisi repudiandae laudantium culpa. Nam quam accusantium nisi optio eius minus deleniti saepe. Ullam aliquid tempore quam ea enim nesciunt consequatur.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus numquam id, perferendis temporibus officia dolorum sapiente, explicabo inventore, sed eum assumenda omnis. Optio hic consequuntur officia, eius asperiores alias veritatis accusamus corrupti aspernatur beatae quam illum perferendis. Illum accusantium atque, voluptatibus eligendi vero dolorem harum quod inventore, sed cumque laborum facere voluptate earum nesciunt quisquam. Eius veniam sed iure magnam modi accusamus tempora voluptates cupiditate doloribus libero inventore, doloremque autem distinctio nostrum temporibus dolores, esse impedit possimus neque saepe nisi repudiandae laudantium culpa. Nam quam accusantium nisi optio eius minus deleniti saepe. Ullam aliquid tempore quam ea enim nesciunt consequatur.</p>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus numquam id, perferendis temporibus officia dolorum sapiente, explicabo inventore, sed eum assumenda omnis. Optio hic consequuntur officia, eius asperiores alias veritatis accusamus corrupti aspernatur beatae quam illum perferendis. Illum accusantium atque, voluptatibus eligendi vero dolorem harum quod inventore, sed cumque laborum facere voluptate earum nesciunt quisquam. Eius veniam sed iure magnam modi accusamus tempora voluptates cupiditate doloribus libero inventore, doloremque autem distinctio nostrum temporibus dolores, esse impedit possimus neque saepe nisi repudiandae laudantium culpa. Nam quam accusantium nisi optio eius minus deleniti saepe. Ullam aliquid tempore quam ea enim nesciunt consequatur.</p>
     </main>
     
