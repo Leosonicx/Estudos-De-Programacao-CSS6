@@ -1,1 +1,65 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center; /* Alinhei todos os textos do header no centro */
+}
+
+header > h1 {
+    padding-top: 50px; /* Permitiu que eu movesse a borda pra cima para criar mais espaço */
+    font-variant: small-caps; /* Também poderia usar o Text-Transform para deixar maiusculo, mas parecia muito "gritante" */
+}
+
+header > p {
+    padding-bottom: 50px; /* Permite que eu deixe assimétrico pois no header > h1 eu deixei o padding-top com 50px */
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none; 
+    font-weight: bolder; /* O link irá ficar em negrito */
+}
+
+Header a:hover, footer a:hover  {
+    text-decoration: underline; /* Ao passar o mouse por cima, o link irá brilhar */
+}
+
+section {
+    padding-top: 10vh; /* Vai ser 10% da altura da tela o padding top e o padding bottom */
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal { /* O ponto significa a classe */
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.492);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
