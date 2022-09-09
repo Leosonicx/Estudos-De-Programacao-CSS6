@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        tbody {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: grey;
+            color: white;
+            text-shadow: 1px 1px black;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        thead {
+            background-color: grey;
+            color: white;
+        }
+
+        tr#moroaqui {
+            background-color: blue;
+        }
+
+        td.mudança {
+            color: green;
+        }
+
+        td.total {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    
+   <!--         Anatomia para tabelas grandes:
+        TABLE
+            Caption - Legenda da tabela
+            THEAD   
+                tr,td, th
+            TBODY
+                tr,td,th
+            TFOOT
+                tr,td,th 
+-->
+    <table>
+
+        <Caption>
+            População das Unidades Federativas
+        </Caption>
+
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População (2020)</th>
+                <th>População (2021)</th>
+                <th>mudança</th>
+            </tr>
+        </thead>
+
+        
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>41 262 199</td>
+                <td>46 649 132</td>
+                <td class="mudança">+13.05%</td>
+            </tr>
+            <tr id="moroaqui">
+                <td>Minas Gerais</td>
+                <td>19 597 330</td>
+                <td>21 411 923</td>
+                <td class="mudança">+9.26%</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>15 989 929</td>
+                <td>17 463 349</td>
+                <td class="mudança">+9.21%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 016 906</td>
+                <td>14 985 284</td>
+                <td class="mudança">+6.91%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>10 444 526</td>
+                <td>11 597 484</td>
+                <td class="mudança">+11.04%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10 693 929</td>
+                <td>11 466 630</td>
+                <td class="mudança">+7.23%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>8 796 448</td>
+                <td>9 674 793</td>
+                <td class="mudança">+9.98%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8 452 381</td>
+                <td>9 240 580</td>
+                <td class="mudança">+9.32%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>7 581 051</td>
+                <td>8 777 124</td>
+                <td class="mudança">+15.78%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>6 248 436</td>
+                <td>7 338 473</td>
+                <td class="mudança">+17.44%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>6 003 788</td>
+                <td>7 206 589</td>
+                <td class="mudança">+20.03%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>6 574 789</td>
+                <td>7 153 262</td>
+                <td class="mudança">+8.80%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>3 483 985</td>
+                <td>4 269 995</td>
+                <td class="mudança">+22.56%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>3 514 952</td>
+                <td>4 108 508</td>
+                <td class="mudança">+16.89%</td>
+            </tr>
+            <tr>
+                <td>Paraíbaa</td>
+                <td>3 766 528</td>
+                <td>4 059 905</td>
+                <td class="mudança">+7.79%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3 035 122</td>
+                <td>3 567 234</td>
+                <td class="mudança">+17.53%	</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3 168 027</td>
+                <td>3 560 903</td>
+                <td class="mudança">+12.40%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3 120 494</td>
+                <td>3 365 351</td>
+                <td class="mudança">+7.85%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3 118 360</td>
+                <td>3 289 290</td>
+                <td class="mudança">+5.48%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>2 570 160</td>
+                <td>3 094 325</td>
+                <td class="mudança">+20.39%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso Do Sul</td>
+                <td>2 570 160</td>
+                <td>2 839 188</td>
+                <td class="mudança">+15.93%</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2 068 017</td>
+                <td>2 338 474</td>
+                <td class="mudança">+13.07%</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1 562 409</td>
+                <td>1 815 278</td>
+                <td class="mudança">+16.18%</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>1 383 445</td>
+                <td>1 607 363</td>
+                <td class="mudança">+16.18%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>733 559</td>
+                <td>906 876</td>
+                <td class="mudança">+23.63%</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>669 526</td>
+                <td>877 613</td>
+                <td class="mudança">+31.08%	</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>450 479</td>
+                <td>652 713</td>
+                <td class="mudança">+44.89%</td>
+            </tr>
+        </tbody>
+            
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="total">213,3 milhões</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
