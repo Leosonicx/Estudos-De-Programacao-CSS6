@@ -1,11 +1,23 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Qwitcher Grypen', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
-}
+}   
 
 html, body {
+    font-family: var(--fonte1);
     min-height: 100vh;
     background-color: darkgray;
 }
@@ -17,8 +29,11 @@ header {
 }
 
 header > h1 {
+    font-family: var(--fonte2); 
     padding-top: 50px; /* Permitiu que eu movesse a borda pra cima para criar mais espaço */
     font-variant: small-caps; /* Também poderia usar o Text-Transform para deixar maiusculo, mas parecia muito "gritante" */
+    font-size: 3em; /* Coloquei para ficar 3x o tamanho original */
+    font-size: 10vw; /* Além de centralizar com a tela pequena ou grande, ele vai aumentar e diminuindo conforme mover a tela */
 }
 
 header > p {
@@ -36,10 +51,12 @@ Header a:hover, footer a:hover  {
 }
 
 section {
+    font-family: var(--fonte3);
     padding-top: 10vh; /* Vai ser 10% da altura da tela o padding top e o padding bottom */
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3vh;
 }
 
 section.normal { /* O ponto significa a classe */
@@ -53,7 +70,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block; /* Vai transformar na caixa que se adapta ao conteúdo. */
+    padding: 5px; /* Para não ficar colado. */
     background-color: rgba(0, 0, 0, 0.459);
 }
 
