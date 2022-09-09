@@ -44,6 +44,11 @@
 
         td.total {
             text-align: center;
+            background-color: white;
+        }
+
+        tfoot {
+            background-color: grey;
         }
 
     </style>
@@ -68,18 +73,18 @@
         </Caption>
 
         <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População (2020)</th>
-                <th>População (2021)</th>
-                <th>mudança</th>
+            <tr> <!-- Scope é oque vai dar sentido na minha tabela, para que os navegadores analizem corretamente-->
+                <th scope="col">Estado</th> <!--Titulos são TH-->
+                <th scope="col" style="width: 90px;">População (2020)</th>
+                <th scope="col" style="width: 90px;">População (2021)</th>
+                <th scope="col"style="width: 40px;">mudança</th>
             </tr>
         </thead>
 
         
         <tbody>
             <tr>
-                <td>São Paulo</td>
+                <td>São Paulo</td> <!--Dados são TD-->
                 <td>41 262 199</td>
                 <td>46 649 132</td>
                 <td class="mudança">+13.05%</td>
@@ -246,7 +251,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="total">213,3 milhões</td>
             </tr>
         </tfoot>
