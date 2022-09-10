@@ -13,6 +13,13 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* Vai permitir ao scrollar a tabela, o thead dela irá descer junto */
+        }
+
+        thead > tr > th { /* Vai permitir ao scrollar a tabela, o thead dela irá descer junto */
+            position: sticky; 
+            top: -1px;
+            background-color: grey; 
         }
 
         caption {
