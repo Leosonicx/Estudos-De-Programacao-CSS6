@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iFrames</title>
+    <style>
+        iframe { /* as configurações de tamanho do iframe na css sempre irão ter prioridade na do HTML */
+            width: 400px;
+            height: 400px;
+        }
+
+        iframe.cursos {
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iFrame</h1>
+    <p>
+        Acessando o site do 
+    
+        <!--O tamanho padrão de um iframe é de 300x150 -->
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" >
+            [ Seu navegador não é compatível com isso. ] <!-- Tudo que colocar aqui dentro, irá aparecer caso seu navegador não apareça o iframe.-->
+        </iframe> <!--Coloca uma caixa com o site do CursoEmVideo no seu navegador.-->
+
+    para aprender a programar.
+    </p>
+
+    <p>
+        O repositório do Guanabara também é
+
+        <iframe src="https://www.gustavoguanabara.github.io" frameborder="0" height="500"> <!--Posso alternar os tamanhos.-->
+            <a href="https://www.gustavoguanabara.github.io" target="_blank" rel="author"></a> <!--Posso colocar um link, o que seria mais "pratico" que colocar que o navegador não é compatível.-->
+        </iframe>
+
+        bem legal.
+    </p>
+
+    <p>
+        Site do cursoemvideo na aba
+
+        <iframe class="cursos" src="https://www.cursoemvideo.com/cursos/" frameborder="0" scrolling="no"></iframe>
+        <!--Frameborder:
+        Posso colocar o tanto de px que eu querer, e também posso personalizar a borda pelo CSS.-->
+
+        <!--Scrollings: 
+        Auto: Se o conteudo exceder o tamanho do frame, ele coloca a barra de rolagem.
+        Yes: Mesmo que o conteúdo coubesse todo dentro do iframe, iria ter a barra de rolagem.
+        No: Mesmo que o conteúdo seja maior, ele não vai permitir ter a rolagem. (Mas não funciona em algunas navegadores.)-->
+
+        Cursos
+    </p>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de testes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 0, 255);
+            color: white;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 400px;
+            text-align: center;
+            margin: auto;
+            height: 100vh;
+        }
+
+        th, td {
+            border: 1px solid black; /* É necessário usar aqui para que crie as bordas */
+        }
+
+        th.cor1 {
+            background-color: grey;
+        }
+        
+        td#cor1 {
+            background-color: yellow;
+        }
+
+        td#cor2 {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+     <table>
+        <thead>
+            <th style="height: 70px;" class="cor1" rowspan="2" scope="col">Área</th>
+            <th class="cor1" rowspan="2" scope="col">Disciplinas</th>
+            <th class="cor1" colspan="2" scope="colgroup">Notas</th>
+            <th class="cor1" rowspan="2" scope="col">Média</th>
+
+                <tr>
+                     <th class="cor1" scope="col">Nota 1</th>
+                     <th class="cor1" scope="col">Nota 2</th>
+                </tr>   
+        </thead>
+            
+        <tbody>
+            <tr>
+                <th style="height: 100px;" rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <th class="cor1" colspan="4" scope="rowgroup">Médias exatas</th>
+                <td id="cor2">0.0</td>
+
+            </tr>
+
+            <tr>
+                <th style="height: 70px;" rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <th class="cor1" colspan="4" scope="rowgroup">Média de Humanas</th>
+                <td id="cor1">0.0</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
