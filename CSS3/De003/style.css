@@ -42,3 +42,22 @@ iframe#tela {
     height: 471px;
     background-size: cover;
 }
+
+section#redes-sociais {
+    text-align: right; /* Vai deixar os icones de redes sociais do lado direito */
+}
+
+section#redes-sociais > a > img {
+    box-sizing: border-box; /* Ajuda no Hover, vai permitir que ao passar o cursos em cima, não mova todas as imagens e deixa a borda em cima apenas da imagem que o cursos ficar em cima. */
+    width: 50px; /* Ao diminuir a largura para 50px, ele automaticamente irá diminuir a altura também! */
+    margin: 10px;
+    border-radius: 50%; /* Ao colocar 50 POR CENTO, ele irá deixar toda a imagem redonda */
+    box-shadow: 1px 1px 3px black;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid white;
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 3px black;
+    transition: transform 100ms, border 0.3s ; /* Vai permitir que eu dê um delay na animação da borda aparecer */
+}
