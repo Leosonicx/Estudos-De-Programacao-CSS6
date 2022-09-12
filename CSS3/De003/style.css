@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background:url(imagens/Freeza.png) no-repeat left center; /* Escolher a imagem, não deixa-la repetir, e o lado dela */
+    background-size: cover; /* Para deixar a imagem maior no fundo. */
+    background-attachment: fixed; /* Para não haver rolagem. */
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+section#telefone {
+    position: absolute; /* Permite usar top, left, right etc... */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Sempre que eu mover a tela após colocar top e left, ele sempre irá ficar no meio. */
+
+    height: 627px; /*Height e width são o tamanho da imagem do iPhone, e para que fique certo coloquei ele aqui para encaixar.*/
+    width: 311px;
+    background: url(imagens/frame-iphone.png) no-repeat; /* Imagem do celular e que ela não irá se repetir. */
+}
+
+iframe#tela {
+    position: relative;
+    top: 81px;
+    left: 22px;
+    width: 267px;
+    height: 471px;
+    background-size: cover;
+}
