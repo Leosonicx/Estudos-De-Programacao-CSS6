@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form autocomplete="on" action="cadastro.php" method="post">
+         <!--Autocomplete, On=ativa/Off=desativa (Tem muitos) as "sugeridas" que seu navegador lhe proporciona.-->
+        <p>
+            <label for="iusuario">Usuáro:</label>
+            <input type="text" name="iusuario" id="isuario" autocomplete="username" required minlength="5" maxlength="5" placeholder="Nome do Usuário" >
+             <!--Ao colocar required, o campo deve estar preenchido ou irá dar erro.-->
+            <!--Minlength e maxlength representam o tanto de letras que o campo deve ter para ser enviado.-->
+            <!--PlaceHolder, vai mostrar "NOME DO USUARIO" dentro da sua caixa até você digitar algo.-->
+        </p>
+
+        <p><label for="isenha"></label>Senha:
+            <input type="password" name="isenha" id="isenha" autocomplete="current-password" required minlength="8" size="10"> <!--Ao colocar type="senha" a senha já será ocultada na caixa.-->
+            <!--Size="" Representa o tanto de caracteres que voce pode colocar na caixa, pode passar de 10 caso não tenha maxlength.-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar"> <!--Submit é o botão de ENVIAR-->
+            <input type="reset" value="Limpar"> <!--Reset limpa seus dados-->
+        </p>
+    </form>
+</body>
+</html>
