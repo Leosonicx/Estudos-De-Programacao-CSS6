@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        
+        <p>
+            <label for="inumero">Numero 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number (in2.value)">
+            <!--Oninput (Quando eu digitar:).-->
+            <!--Output é apenas para calcular e mostrar coisas na tela, e não envia nada.-->
+            <!--Explicação do Js a cima: o HTML que estiver dentro de isoma vai ser o valor de n1 + o valor que estiver dentro de n2, o que lhe dará o resultado.-->
+        </p>
+
+        <p>
+            <label for="in2">Número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number (in2.value)">
+        </p>
+        
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <label for="irange1"> Número range:</label>
+            <input type="range" name="range1" id="irange1" min="0" max="10" value="5" oninput="ival.innerHTML = Number(irange1.value)">
+            <output id="ival">5</output>
+            <!--Ival que é o conteúdo dentro do output, vai mostrar o número que está sendo usado no range.(ID do output + Id do input = value)-->
+        </p>
+
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2022" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade" oninput="calcIdade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcIdade () {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+                <!--Nesse scrip irá fazer um calculo de idade. Vai mostrar o ano atual (2022) - O ano que você nasceu e lhe dará o valor da sua idade!-->
+</body>
+</html>
