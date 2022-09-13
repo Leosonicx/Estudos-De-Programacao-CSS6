@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--Method="GET" (Revela seus dados na URL), serve para compartilhar links que não revelem informações sensiveis.-->
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="GET" autocomplete="off"> <!--Form Inicia um formulário--> <!--O autocomplete off/on removerá as recomendações-->
+        <p><label for="inome">Nome:</label> <!--É necessário colocar label para ajudar no mecanismo do google.-->
+             <input type="text" name="nome" id="inome"></p> <!--Input cria uma caixa paara seu formulário-->
+
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p> <!--name é mais útil para HTML e PHP e id é mais util para javascript.-->
+        <p><input type="submit" value="Enviar"></p> <!--Cria um botão para seu formulário-->
+    </form>
+
+<hr>
+
+    <!--Method="POST", não revela seus dados na URL.-->
+    <form action="cadastro.php" method="post" autocomplete="off"> 
+        <p><label for="inome">Nome:</label> 
+             <input type="text" name="nnome" id="iinome"></p> 
+
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="ssobrenome" id="iisobrenome"></p> 
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
