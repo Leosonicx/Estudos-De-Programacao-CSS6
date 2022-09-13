@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexo" value="M"> <label for="isexo">Masculino</label>
+            <input type="radio" name="sexo" id="ifeminino" value="F"> <label for="ifeminino"> Femino</label>
+            <!--Radio cria uma bolinha marcavel, para que elas se agrupem e troquem ao clicar em uma bolinha, é necessário usar o MESMO name.-->
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="futebol" id="ifutebol" checked> <label for="ifutebol">Futebol</label> <br>
+            <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquete</label> <br>
+            <input type="checkbox" name="tenis" id="itenis"> <label for="itenis">Tenis</label> <br>
+            <input type="checkbox" name="nataçao" id="inataçao"> <label for="inataçao">Natação</label> <br>
+            <input type="checkbox" name="beisebol" id="ibeisebol"> <label for="ibeisebol">Beisebol</label> <br>
+            <!--Checkbox cria uma caixa (CHECKBOX) de marcação-->
+            <!--Checked, mostra uma caixinha JA MARCADA. Não é possivel usar checked em 2 radio.-->
+        </fieldset>
+
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
