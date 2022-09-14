@@ -1,1 +1,10 @@
 @charset "UTF-8";
+
+/* Configurações modo retrato */
+
+body {
+    background: url(../imagens/cev-portrait\ Kingdom\ Shin\ mata\ Houken.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}

@@ -1,1 +1,10 @@
 @charset "UTF-8";
+
+/* Configurações modo paisagem */
+
+body {
+    background: url(../imagens/cev-landscape\ Kingdom\ kai\ mata\ diversos\ soldados.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
