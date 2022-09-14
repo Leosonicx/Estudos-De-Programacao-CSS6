@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@media print { /* Impressoras não imprimem backgrounds! */
+    body {
+        background-image: url(../imagens/back-print\ Kingdom\ Kanki\ apontando\ arco\ para\ milhares.png);
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+        border-radius: 3px;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: 1px 1px 1px black;
+        color: black;
+    }
+
+    main::after {
+        content: 'Impressão feita pela Leozin News, todos os direitos reservados.';
+        text-decoration: dashed;
+    }
+
+    img#fone {display: none;}
+    img#tablet {display:none;} 
+    img#impressora {display: block;}
+    img#desktop {display: none;}
+    img#tv {display: none;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    body {
+        background-image: url(../imagens/back-tablet\ Kingdom\ shin\ matando\ o\ general.png); 
+}
+
+    img#fone {display: none;}
+    img#tablet {display:block;} 
+    img#impressora {display: none;}
+    img#desktop {display: none;}
+    img#tv {display: none;}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Desktop */
+    body {
+        background-image: url(../imagens/back-pc\ Kingdom\ shin\ tropas.png);
+    }
+
+    img#fone {display: none;}
+    img#tablet {display:none;} 
+    img#impressora {display: none;}
+    img#desktop {display: block;}
+    img#tv {display: none;}
+}
+
+
+@media screen and (min-width: 1200px) { /* Grandes telas */
+    body {
+        background-image: url(../imagens/back-tv\ Kingdom\ morte\ do\ Shousa.png);
+    }
+
+    main {
+        width: 700px;
+    }
+    img#fone {display: none;}
+    img#tablet {display:none;} 
+    img#impressora {display: none;}
+    img#desktop {display: none;}
+    img#tv {display: block;}
+}
