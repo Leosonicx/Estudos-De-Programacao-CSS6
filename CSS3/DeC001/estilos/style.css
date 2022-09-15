@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+body {
+    background: #ECF2F8;
+}
+
+
+body > main > section > article > div#supremo {
+    margin: auto;
+    width: 50%;
+
+}
+
+body > main > section > article > div#supremo > div#retangulo {
+
+    position: absolute;
+    width: 730px;
+    height: 280px;
+    left: 355px;
+    top: 260px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+    border-radius: 10px;
+}
+
+body > main > section > article > div#supremo > div#bitmap {
+
+    position: absolute;
+    width: 350px;
+    height: 524px;
+    left: 355px;
+    top: 260px;
+
+    background: url(Image.png);
+}
+
+body > main > section > article > div#supremo > div#letras-grifadas {
+
+    position: absolute;
+    width: 365px;
+    height: 84px;
+    left: 680px;
+    top: 292px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+
+    letter-spacing: 0.25px;
+
+    color: #48556A;
+}
+
+body > main > section > article > div#supremo > div#letras-normais {
+
+    position: absolute;
+    width: 365px;
+    height: 60px;
+    left: 680px;
+    top: 388px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+
+    letter-spacing: 0.121875px;
+
+    color: #6E8098;
+}
+
+body > main > section > article > div#supremo > div#ovo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 680px;
+    top: 468px;
+
+    background: url(../Imagens/Oval.png);
+}
+
+body > main > section > article > div#supremo > div#nome-e-data > p#nome {
+
+    position: absolute;
+    height: 20px;
+    left: 730px;
+    top: 460px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+
+    letter-spacing: 0.121875px;
+
+    color: #48556A;
+}
+
+body > main > section > article > div#supremo > div#nome-e-data > p#data {
+
+    position: absolute;
+    height: 20px;
+    left: 730px;
+    top: 475px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+
+    letter-spacing: 0.121875px;
+
+    color: #9DAEC2;
+}
+
+body > main > section > article > div#supremo > div#oval {
+
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 1013px;
+    top: 472px;
+    border-radius: 50%;
+
+background: #ECF2F8;
+}
+
+body > main > section > article > div#supremo > div#voltar {
+
+    position: absolute;
+    width: 15px;
+    height: 12.97px;
+    left: 1022px;
+    top: 481.01px;
+}
