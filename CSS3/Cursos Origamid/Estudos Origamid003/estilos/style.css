@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+div.flex {
+    display: flex; /* Da inicio ai display flex, mas ao deixar só isso vai ficar tudo grudado */
+    gap: 20px;
+    flex-wrap: wrap ; /* Vai indicar se ele deve quebrar em uma nova linha, ou nõo */
+   /* justify-content: center;  Esse elemento com center vai deixar os itens no centro. 
+    align-content: center;  Só vai funcionar esse elemento com center se eu setar um height place-content: center; shorthand de Justify e Align */
+}
+
+body {
+    margin: 0px;
+}
+
+h2 {
+   background: #e7e7e7;
+   border: 1px solid #d7d7d7;
+   padding: 20px;
+   margin: 0px;
+}
+
+div.grid {
+    margin-top: 60px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    /* Auto-fit vai tentar distribuir o maximo (Só funciona com Px), pode ser usado com minmax também. */
+}

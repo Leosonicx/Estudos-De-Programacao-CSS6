@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+a.comprar {
+    background-color: #a8f;
+    color: #103;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+div.item {
+    background-color:#f7f7f7;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    border-radius: 5px;
+    display: grid;
+}
+
+div.grid {
+    display: grid; /* Inicia o grid */
+    grid-template-columns:1fr 1fr; /* Auto vai tentar alinhar todo o conteudo até a ponta. */
+    /* Grid-template-columns, posso escolher o TAMANHO de cada coluna do meu grid, além da distribuição que cada div irá receber. */
+    gap: 20px; /* Cria uma margem para os lados e para baixo */
+    /* justify-content: center; Vai alinhar minhas colunas da maneira que eu preferir, olhar no notion as maneiras.*/
+    /* align-content: end;Align-content: end vai permitir eu usar height e ter um espaçamento de diversas maneiras, notion. */
+    place-content: center center; /* É um shorthand para justify-content e align-content */
+}

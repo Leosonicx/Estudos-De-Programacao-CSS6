@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+.grid {
+    display:grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr); /* Posso colocar também para repetir em diversas colunas, ex: repeat(999,1fr);
+    grid-template-rows: 300px auto; /* Vai alterar as linhas do grid, toda vez que eu forçar um tamanho menor que o conteúdo, ele irá estourar. */
+    /* grid-auto-rows: ; Vai mudar como ele irá formar o tamanho das novas linhas */
+    place-items: start; /* Permite que meu elemento para de se expandir ao máximo */
+    grid-template-rows: repeat(3, auto) 1fr; 
+}
+
+.titulo {
+    grid-column: 1/-1;
+}
+
+.info {
+    place-self: start;
+    display: grid;
+    place-items: start;
+    gap: 20px;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+
+h1, p {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1;
+}
+
+img.foto {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+p, span {
+    font-size: 20px; 
+}
+
+a.comprar {
+    background: #a8f;
+    color: #103;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+div.grid {
+    display:grid;
+}
+span.preco {
+    background: #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
