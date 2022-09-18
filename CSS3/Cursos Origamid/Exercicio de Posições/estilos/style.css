@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+body, header {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background: #f7f7f7; 
+    display: grid; /* Iniciando o grid */
+    gap: 60px; /* Separando os elementos */
+    justify-items: center; /* Deixando TODA A PÁGINA no centro. */
+    margin-top: 60px; /* Criando uma distância do topo da página */
+}
+
+.menu {
+    display: flex; /* Removeu todos os espaços dos links deixando tudo inline ao deixar só display: flex; */
+    flex-wrap: wrap; /* Ao diminuir o tamanho da pagina, o conteúdo do menu ira quebrar. */
+    justify-content: center; /* Sempre vai alinhar o conteudo do menu no centro, mesmo após a quebra ao diminuir a pagina. */
+    gap: 20px; /* Separou os itens igualmente em 20px */
+}
+
+.menu a {
+    background: #ffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #000000;
+    text-transform: uppercase; /* Coloca tudo em letra maiusculo */
+}
+
+.conteudo {
+    display: grid; /* Inicia o grid. */
+    grid-template-columns: 1fr 1fr; /* Dividi o Grid de Conteudo em 2 colunas */
+    max-width: 1000px;
+    position: relative;
+}
+
+.introducao {
+    background: #fff;
+    padding: 40px; /* Desgrudando toda a introducao do canto. */
+    text-align: right; /* Alinhando o texto na direita. */
+    display: grid; /* Vai considerar toda a introducao como grid */
+    gap: 20px; /* Separando todo o meu conteudo igualmente. */
+    align-content: center; /* Alinhou todo o conteudo de introducao no centro. */
+    justify-items: end; /* Alinhou tudo no canto e fez o botão parar de ficar imenso */
+}
+
+.detalhe {
+    width: 60px;
+    height: 4px;
+    background: #e21;
+    display: inline-block; /* Define um bloco em linha para nosso detalhe. */
+    position: absolute; /* É necessário o position: relative (elemento pai) para que meu detalhe não fique no topo da pagina */
+    top: 30px;
+    right: 470px;
+}
+
+h1 {
+    font-size: 35px;
+}
+img {
+    max-width: 100%; /* Não deixando a imagem ficar maior que a tela */
+    display: block; /* Renderizando o elemento como bloco */
+}
+
+a {
+    text-decoration: none; /* Removendo todos os sublinhados dos links do site. */
+}
+
+a#botao {
+    background: #ee2211;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+p, h1, h2, h3 {
+    margin: 0px; /* Deixando tudo junto */
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.3; /* Distanciando as linhas */
+}
