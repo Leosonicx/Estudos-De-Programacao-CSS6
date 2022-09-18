@@ -6,7 +6,7 @@ body, header {
     background: #f7f7f7; 
     display: grid; /* Iniciando o grid */
     gap: 60px; /* Separando os elementos */
-    justify-items: center; /* Deixando TODA A PÁGINA no centro. */
+    justify-items: center; /* Deixando TODA A PÁGINA no centro, e não permitindo que os itens do resto da pagina se estenda muito, vai ser apenas o máximo do conteúdo dele. */
     margin-top: 60px; /* Criando uma distância do topo da página */
 }
 
@@ -52,6 +52,38 @@ body, header {
     right: 470px;
 }
 
+.subtitulo {
+    font-size: 64px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 40px;
+    align-self: center; /* Alinha apenas UM ITEM e nesse caso, no centro. */
+}
+
+.vantagens {
+    background: #fff;
+    padding: 40px;
+}
+
+.vantagens-item {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Auto é o valor que só pega o tamanho do conteúdo, poderia dar um valor fixo também, exemplo: 40px que ele também iria ficar alinhado. E o que sobrar será 1fr. */ 
+    gap: 10px 20px; /* O primeiro valor é a distancia entre as linhas e o segundo é a distancia entre as colunas. */
+    padding: 20px;
+}
+.vantagens-item p {
+    grid-column: 2; /* Criou 2 colunas. */
+}
+
+footer > .rodape {
+    width: 100%; /* Cuidado para não somar com o padding. Pois width sempre irá somar com padding, nesse caso ficar 100% + 40px. */
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box; /* Vai falar para o rodapé respeitar apenas o tamanho do width. */
+}
+
 h1 {
     font-size: 35px;
 }
@@ -69,7 +101,7 @@ a#botao {
     color: #fff;
     padding: 15px 30px;
     border-radius: 5px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
 }
 
 p, h1, h2, h3 {
