@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) { /* Max = Menor que / Min = Maior que. A parte responsiva é importante fazer depois das outras partes */ 
+    div {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        background: lightpink;
+    }
+
+    img {
+        display: none; /* Ao chegar em 600px, a imagem irá ser removida. */
+    }
+}
+
+@media (min-width: 1000px) { /* Posso colocar VIRGULA para outras medias também. Posso usar AND e outra media para ter um tamanho bem especifico, por exemplo min-with 10000px and max-width 1000000px */
+    html {
+        font-size: 150%;
+    }
+}

@@ -25,6 +25,12 @@ body, header {
     text-transform: uppercase; /* Coloca tudo em letra maiusculo */
 }
 
+.menu a:hover{
+    background-color: rgba(172, 171, 171, 0.535);
+    border: 1px solid black;
+    margin: -1px; /* Fez a página parar de "tremer" ao passar o cursor em cima */
+}
+
 .conteudo {
     display: grid; /* Inicia o grid. */
     grid-template-columns: 1fr 1fr; /* Dividi o Grid de Conteudo em 2 colunas */
@@ -42,7 +48,8 @@ body, header {
     justify-items: end; /* Alinhou tudo no canto e fez o botão parar de ficar imenso */
 }
 
-.detalhe {
+.introducao::before {
+    content:""; /* Regra principal do pseudoelemento, ele sempre deve ter um conteúdo, se não ele não irá aparecer. */
     width: 60px;
     height: 4px;
     background: #e21;
@@ -72,6 +79,7 @@ body, header {
     gap: 10px 20px; /* O primeiro valor é a distancia entre as linhas e o segundo é a distancia entre as colunas. */
     padding: 20px;
 }
+
 .vantagens-item p {
     grid-column: 2; /* Criou 2 colunas. */
 }
@@ -104,11 +112,10 @@ a#botao {
     text-transform: uppercase; 
 }
 
-p, h1, h2, h3 {
-    margin: 0px; /* Deixando tudo junto */
+a#botao:hover {
+    background-color: red;
 }
 
-p {
-    font-size: 20px;
-    line-height: 1.3; /* Distanciando as linhas */
+p, h1, h2, h3 {
+    margin: 0px; /* Deixando tudo junto */
 }
