@@ -59,6 +59,11 @@ body, header {
     right: 470px;
 }
 
+.introducao-cover img { /* Vai alinhar SEMPRE a imagem toda na coluna, usando 100% da coluna */
+    object-fit: cover;
+    height: 100%;
+}
+
 .subtitulo {
     font-size: 64px;
     text-transform: uppercase;
@@ -66,6 +71,7 @@ body, header {
     text-align: right;
     padding: 40px;
     align-self: center; /* Alinha apenas UM ITEM e nesse caso, no centro. */
+    /* word-break: break-all; Vai quebrar qualquer palavra.*/ 
 }
 
 .vantagens {
