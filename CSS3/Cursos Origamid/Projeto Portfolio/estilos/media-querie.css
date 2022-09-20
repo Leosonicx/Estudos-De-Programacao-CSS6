@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column; /* Ao chegar em 800px, o menu irá quebrar e ficar em modo coluna. */
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .header a {
+        background: #f5f5f5;
+        border-radius: 4px;
+    }
+}
