@@ -59,7 +59,7 @@ body {
     height: 100px;
     background: url(../img/detalhe.svg) no-repeat center;
     position: absolute; /* Para colocar POSICIONADO no h1 da imagem é necessário usar o position relative no introducao h1. */
-    top: -1px;
+    top: -14px;
     left: -40px;
     z-index: -1;
 }
