@@ -3,37 +3,38 @@
 #eu {
     position: relative;
     padding: 4px;
-    background-color: #cf6
+    background-color: gold;
 }
 
 #eu:hover {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     /* top: -2px; */
-    box-shadow: 0 2px 2px #666
+    box-shadow: 0 2px 2px #666;
 }
 
 #eu {
     position: relative;
     padding: 4px;
-    background-color:#cf6
+    background-color:#cf6;
 }
 
 #eu:hover {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     /* top: -2px; */
     border-bottom: 2px solid #999;
-    padding-bottom: 2px}
+    padding-bottom: 2px;
+}
 
 #eu {
     position: relative;
     top: 0;
     padding: 4px;
     background-color:#cf6;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
 }
 
 #eu:hover {
-    margin-bottom: 4px;
-    /* top:-4px; */
-    box-shadow:0 4px 3px #999;
+    margin-bottom: 8px;
+    /* top:-2px; */
+    box-shadow:0 2px 1px #999;
 }

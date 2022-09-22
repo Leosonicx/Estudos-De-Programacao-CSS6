@@ -12,6 +12,11 @@
         border-radius: 4px;
     }
 
+    .texto1 {
+        position: absolute;
+        padding: 140px;
+    }
+
     .introducao {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
@@ -25,6 +30,30 @@
         width: 30px;
         height: 10px;
         left: 0px;
+    }
+
+    .experiencia {
+        grid-template-columns: 1fr;
+    }
+
+    .empresa {
+        margin-top: 260px;
+    }
+
+    .experiencia .subtitulo {
+        font-size: 6.5rem;
+    }
+
+    .empresa-ano {
+        position: initial;
+    }
+
+    img.ondas {
+        top: 850px;
+    }
+
+    #eu {
+        display: none;
     }
 }
 
