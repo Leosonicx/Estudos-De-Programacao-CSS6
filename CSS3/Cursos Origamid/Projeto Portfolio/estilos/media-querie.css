@@ -26,18 +26,13 @@
         font-size: 2.5rem;
     }
 
-    .introducao h1::before {
-        width: 30px;
-        height: 10px;
-        left: 0px;
-    }
-
     .experiencia {
         grid-template-columns: 1fr;
     }
 
     .empresa {
         margin-top: 260px;
+        margin-bottom: -350px;
     }
 
     .experiencia .subtitulo {
@@ -45,7 +40,12 @@
     }
 
     .empresa-ano {
-        position: initial;
+        position: initial; /* Vai deixar a data no posicionamento inicial dela. */
+        order: 1; /* Deixando a ordem da data no ultimo, se outro code tivesse order, então eu deveria colocar um numero maior. */
+    }
+
+    .empresa-ano::before {
+        content: "Ano: ";
     }
 
     img.ondas {

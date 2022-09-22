@@ -110,7 +110,7 @@ body {
     border-radius: 4px;
     position: relative;
     gap: 10px 100px;
-    background: linear-gradient(#aaaaaa4e, #65dd0a37)
+    background: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.111), rgba(255, 255, 255, 0.111))
 }
 
 .empresa::before {
@@ -118,7 +118,7 @@ body {
     display: block;
     width: 4px;
     height: 20px;
-    background: linear-gradient(#b6f829, #67dd0a);
+    background: linear-gradient(#ffffff, #000000);
     position: absolute;
     top: 20px;
     left: -4px;
@@ -159,6 +159,37 @@ body {
     padding: 5px 10px;
 }
 
+.formacao {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    background: #141414;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.formacao .subtitulo {
+    color: #000000;
+}
+
+.formacao-texto {
+    position: absolute;
+    font-size: 1.2rem;
+    line-height: 3;
+    max-width: 100ch;
+    color: #a3a3a3;
+}
+
+.formacao-texto strong {
+    color: #ffffff;
+}
+
+.cursos-lista {
+    
+}
+
 h1, h2, h3, p {
     margin: 0px;
 }
@@ -180,6 +211,6 @@ img {
 img.ondas {
     max-width: 500px;
     position: absolute;
-    top: 800px;
+    top: 798px;
     transform: skewY(0deg)
 }

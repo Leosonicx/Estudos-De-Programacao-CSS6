@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root {
+    --cor-preta-transparente: rgba(0, 0, 0, 0.242);
+}
+
 #eu {
     position: relative;
     padding: 4px;
@@ -9,13 +13,13 @@
 #eu:hover {
     margin-bottom: 8px;
     /* top: -2px; */
-    box-shadow: 0 2px 2px #666;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.664);
 }
 
 #eu {
     position: relative;
     padding: 4px;
-    background-color:#cf6;
+    background-color:rgba(0, 0, 0, 0.483);
 }
 
 #eu:hover {
@@ -29,12 +33,12 @@
     position: relative;
     top: 0;
     padding: 4px;
-    background-color:#cf6;
+    background-color:rgba(49, 49, 49, 0.705);
     transition: all .2s ease-in-out;
 }
 
 #eu:hover {
     margin-bottom: 8px;
     /* top:-2px; */
-    box-shadow:0 2px 1px #999;
+    box-shadow:0 2px 1px rgba(126, 125, 125, 0.193);
 }
