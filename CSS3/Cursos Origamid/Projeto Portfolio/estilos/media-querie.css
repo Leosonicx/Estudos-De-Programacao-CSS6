@@ -48,6 +48,59 @@
         content: "Ano: ";
     }
 
+    .formacao-container {
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .formacao {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 1850px;
+        left: -50px;
+    }
+
+    .formacao .subtitulo {
+        font-size: 7rem;
+    }
+
+    .formacao-texto {
+        font-size: 1.125rem;
+        position: relative;
+        max-width: 650px;
+    }
+
+    .cursos-lista {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 30px;
+    }
+
+    .cursos {
+        position: relative;
+        left: 30px;
+    }
+
+    .idiomas {
+        position: relative;
+        left: 30px;
+    }
+
+    #sonic {
+        display: block;
+        position: absolute;
+        top: 1245px;
+        right: -250px;
+    }
+
+    #sonic-hi {
+        display: none;
+    }
+
     img.ondas {
         top: 850px;
     }
