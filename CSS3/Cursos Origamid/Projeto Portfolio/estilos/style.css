@@ -110,7 +110,7 @@ body {
     border-radius: 4px;
     position: relative;
     gap: 10px 100px;
-    background: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.111), rgba(255, 255, 255, 0.111))
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.111), rgba(255, 255, 255, 0.111))
 }
 
 .empresa::before {
@@ -159,15 +159,21 @@ body {
     padding: 5px 10px;
 }
 
+.formacao-container {
+    position: relative;
+}
+
 .formacao {
     max-width: 1200px;
-    padding: 40px 20px;
+    padding: 40px 50px;
     margin: 0 auto;
-    background: #141414;
-    color: white;
+    color: black;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 100px;
+    padding-right: 100px;
+    position: absolute ;
+    right: 200px;
 }
 
 .formacao .subtitulo {
@@ -177,17 +183,61 @@ body {
 .formacao-texto {
     position: absolute;
     font-size: 1.2rem;
-    line-height: 3;
     max-width: 100ch;
-    color: #a3a3a3;
+    color: black;
 }
 
 .formacao-texto strong {
-    color: #ffffff;
+    color: black;
 }
 
 .cursos-lista {
-    
+    display: grid;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.curso {
+    width: 100px;
+    text-align: center;
+    margin-top: 80px;
+    flex: 1;
+    background: rgba(0, 0, 0, 0.111);
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.curso-tipo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+}
+
+.curso-nome {
+    font-size: 1.150rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    flex: 1;
+    position: relative;
+}
+
+.curso-instituicao {
+    font-size: 1.125rem;
+    color: #181818;
+}
+
+.formacao-extra h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 h1, h2, h3, p {
