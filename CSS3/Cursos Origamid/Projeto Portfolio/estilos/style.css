@@ -110,7 +110,7 @@ body {
     border-radius: 4px;
     position: relative;
     gap: 10px 100px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.111), rgba(255, 255, 255, 0.111))
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.111), rgba(255, 255, 255, 0.111));
 }
 
 .empresa::before {
@@ -210,6 +210,7 @@ body {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    box-shadow: 3px 2px 5px rgba(115, 115, 115, 0.075);
 }
 
 .curso-tipo {
@@ -278,6 +279,47 @@ body {
     justify-content: space-between;
 }
 
+.footer {
+    background: #0000001b;
+    position: relative;
+    top: 950px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #878686;
+}
+
+.footer-contato li {
+    position: relative;
+    top: 70px;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: #ffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer-contato li a {
+    color: #ffffff;
+}
+
+.footer-copy {
+    font-size: 1.125rem;
+    color: #484747;
+    grid-column: 1 / -1;
+}
 
 
 h1, h2, h3, p {
@@ -313,4 +355,11 @@ img.ondas {
     position: absolute;
     top: 430px;
     left: 540px;
+}
+
+footer img {
+    position: absolute;
+    width: 150px;
+    top: 160px;
+    left: 460px;
 }
