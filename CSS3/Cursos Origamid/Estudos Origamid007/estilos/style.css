@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+[required] { /* Colocando um atributo em [], posso colorir qualquer tag que ter este atributo. */
+    border: 1px solid tomato;
+}
+
+[href="#contato"] {
+    border: 2px solid green;
+}
+
+p[required] { /* Também poderia fazer desta maneiraa, mas só o P ficaria pintado. Não pode ter espaço do P para o [ */
+    border: 1px solid tomato; 
+} 
+
+[href^="#"] { /* Para selecionar algo dentro da tag, é possível usar o ^ */
+    background: tomato;
+}
+
+[href$=".com"] { /* Quaisquer links que TERMINAREM com .com, irão ficar verde. $ Significa terminar com alguma coisa. */
+    background: forestgreen;
+}
