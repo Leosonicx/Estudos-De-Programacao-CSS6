@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    font-size: 2rem;
+}
+
+#produtos {
+    color: lightgreen;
+}
+
+#intro #servicos { /* Esse seletor é mais importante por conter DOIS id's. .*/
+    color: aqua;
+}
+
+#servicos { /* Não importa que os outros tenham duas, cinco ou dez classes, o ID SEMPRE irá se sobrepor. */
+    color: red;
+}
+
+.titulo {
+    color: tomato;
+    padding: 10px;
+}
+
+.titulo.teste { /* Sempre que usar DUAS classes, é importante colocar os . juntos. */
+    color: blue; /* O seletor escrito depois sempre irá se sobressair com os escritos antes. */
+    /* Mesmo que eu colocasse o .titulo.teste em cima do .titulo, esse aqui iria se sobressair por agora ter DUAS classes. */
+}
+
+html body section h2 {
+    border-left: 8px solid lightgreen
+}
+
+h2 {
+    color: black !important; /* !important vai dar prioridade para QUALQUER coisa. */
+}
