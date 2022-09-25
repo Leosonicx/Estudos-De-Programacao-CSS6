@@ -9,10 +9,14 @@ p {
     margin-bottom: 10px;
 }
 
-article p:last-child { /* Com isso eu posso remover a margin-bottom que sobrou do P de cima. */
+/* article p:last-child {  Com isso eu posso remover a margin-bottom que sobrou do P de cima.
     margin-bottom: 0px;
+} */
+
+p + p { /* o primeiro P não irá contar, apenas o segundo e o terceiro. Porque antes do primeiro P não tem outro elemento P. */
+    margin-bottom: 20px;
 }
 
-p + p {
-    margin-bottom: 
+* { /* Vai colocar em TODOS os elementos do site. */
+    border: 2px solid red;
 }
