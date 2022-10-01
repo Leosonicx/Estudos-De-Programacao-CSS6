@@ -51,18 +51,38 @@ body {
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    height: 40px;   
+}
+
+.btn:hover {
+    background-color: rgba(255,255,255,0);
 }
 
 .btn1 { /* Botão do Carro foda sedan */
     color: hsla(31, 77%, 52%, 1);
 }
 
+.btn1:hover {
+    border: 2px solid white;
+    color: white;
+}
+
 .btn2 { /* Botão do Suvskkkkkkkkkk */
     color: hsla(184, 100%, 22%, 1);
 }
 
+.btn2:hover {
+    border: 2px solid white;
+    color: white;
+}
+
 .btn3 { /* BOTÃO DO CARRO MÉDIO DO SILVIO SANTOS */
     color: hsla(179, 100%, 13%, 1);
+}
+
+.btn3:hover {
+    border: 2px solid white;
+    color: white;
 }
 
 .card:nth-of-type(1) { /* Carro foda sedan */
